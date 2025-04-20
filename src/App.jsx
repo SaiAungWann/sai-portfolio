@@ -3,7 +3,6 @@ import { Outlet } from "react-router";
 import Detail from "./components/Detail";
 import BgImg from "./assets/photos/BgImg.jpg";
 import "./App.css";
-import Menu from "./components/Menu";
 
 export default function Layout() {
   const BGIMG = {
