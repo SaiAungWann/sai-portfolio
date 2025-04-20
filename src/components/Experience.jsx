@@ -112,7 +112,7 @@ export default function Experience() {
       title: "Project Engineer (Civil)",
       company: "",
       description:
-        "	I have 4 years experiences as a Site Engineer.In Singapor I have experiences in Matel Works Project for LTA's MRT project and residential building, Renovation works for HDB and Condo. Previously, I worked as Site Engineer cum Drafter for Heap Heng Matel PTE LTD and CA Studio PTE LTD the same time in Singapore. In Myanmar also worked as Site Engineer cum BBS for SSJH Myanmar Co.,Ltd (Chinese Company) RCC residential building, hotel, apartment and shopping mall projects. Experienced in different cultures, languages, international company procedures and techniques.",
+        "	I have 4 years experiences as a Site Engineer.In Singapore I have experiences in Metal Works Project for LTA's MRT project and residential building, Renovation works for HDB and Condo. Previously, I worked as Site Engineer cum Drafter for Heap Heng Metal PTE LTD and CA Studio PTE LTD the same time in Singapore. In Myanmar also worked as Site Engineer cum BBS for SSJH Myanmar Co.,Ltd (Chinese Company) RCC residential building, hotel, apartment and shopping mall projects. Experienced in different cultures, languages, international company procedures and techniques.",
       skills: ["Project Management", "Drafter", "QS", "QC", "BBS"],
     },
   ];

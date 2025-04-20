@@ -91,7 +91,7 @@ export default function Projects() {
       link: "",
       image: Library,
       description:
-        "This project is created using Vite+React, Tailwind CSS and FireBase.Using Vite & React to build website UI and Ux for SPA (Singal Page Application) and add so maney JavaScript function, method, data fetching ect. Using FireBase for some backend service such as firestore, storage, authenticator and rules for users and datas.Which is the private library, users need to register and login in order to use the library.By using Library, users can create, edit, and write comments for their own books.",
+        "This project is created using Vite+React, Tailwind CSS and FireBase.Using Vite & React to build website UI and Ux for SPA (Single Page Application) and add so many JavaScript function, method, data fetching ect. Using FireBase for some backend service such as firestore, storage, authenticator and rules for users and data.Which is the private library, users need to register and login in order to use the library.By using Library, users can create, edit, and write comments for their own books.",
       skills: [
         { JavaScript: { icon: <FaJs />, className: "text-yellow-500" } },
         { React: { icon: <FaReact />, className: "text-blue-500" } },
@@ -110,7 +110,7 @@ export default function Projects() {
       link: "",
       image: "",
       description:
-        "This project is created using Vite+React, Tailwind CSS and FireBase.Using Vite & React to build website UI and Ux for SPA (Singal Page Application) and add so maney JavaScript function, method, data fetching ect. Using FireBase for some backend service such as firestore, storage, authenticator and rules for users and datas.Which is the private library, users need to register and login in order to use the library.By using Library, users can create, edit, and write comments for their own books.",
+        "I have also developed several mini projects as part of my ongoing efforts to enhance and refine my skills.",
       skills: [
         { HTML: { icon: <FaHtml5 />, className: "text-red-500" } },
         { CSS: { icon: <FaCss3 />, className: "text-orange-500" } },
@@ -125,7 +125,7 @@ export default function Projects() {
       link: "",
       image: MyPhoto1,
       description:
-        "	I have 4 years experiences as a Site Engineer.In Singapor I have experiences in Matel Works Project for LTA's MRT project and residential building, Renovation works for HDB and Condo. Previously, I worked as Site Engineer cum Drafter for Heap Heng Matel PTE LTD and CA Studio PTE LTD the same time in Singapore. In Myanmar also worked as Site Engineer cum BBS for SSJH Myanmar Co.,Ltd (Chinese Company) RCC residential building, hotel, apartment and shopping mall projects. Experienced in different cultures, languages, international company procedures and techniques.",
+        "	I have 4 years experiences as a Site Engineer.In Singapore I have experiences in metal Works Project for LTA's MRT project and residential building, Renovation works for HDB and Condo. Previously, I worked as Site Engineer cum Drafter for Heap Heng metal PTE LTD and CA Studio PTE LTD the same time in Singapore. In Myanmar also worked as Site Engineer cum BBS for SSJH Myanmar Co.,Ltd (Chinese Company) RCC residential building, hotel, apartment and shopping mall projects. Experienced in different cultures, languages, international company procedures and techniques.",
       skills: ["Project Management", "Drafter", "QS", "QC", "BBS"],
     },
   ];
