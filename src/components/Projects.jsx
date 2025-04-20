@@ -171,10 +171,7 @@ export default function Projects() {
             <p className="text-sm">{project.date}</p>
 
             <p className=" text-justify">
-              <ReadMoreText
-                text={project.description}
-                className="text-justify"
-              />
+              <ReadMoreText text={project.description} wordLimit={40} />
             </p>
 
             <div className="flex gap-2 mt-2 items-center">
