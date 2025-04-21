@@ -24,7 +24,7 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Cat Cream - Ice Cream Premium",
+      title: "Cat Cream - Ice Cream Premium (Currently Under Development)",
       company: "Cat Cream Cat Cafe",
       link: "https://github.com/SaiAungWann/Cat_Cream.git",
       image: Cat_Cream,
