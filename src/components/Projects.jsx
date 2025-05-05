@@ -33,13 +33,21 @@ export default function Projects() {
       skills: [
         { JavaScript: { icon: <FaJs />, className: "text-yellow-500" } },
         { React: { icon: <FaReact />, className: "text-blue-500" } },
-        { PHP: { icon: <FaPhp />, className: "text-blue-600" } },
-        { Laravel: { icon: <FaLaravel />, className: "text-red-500" } },
-        { Livewire: { icon: <SiLivewire />, className: "text-red-500" } },
+        // { PHP: { icon: <FaPhp />, className: "text-blue-600" } },
+        // { Laravel: { icon: <FaLaravel />, className: "text-red-500" } },
+        // { Livewire: { icon: <SiLivewire />, className: "text-red-500" } },
+        { NodeJS: { icon: <FaNodeJs />, className: "text-green-600" } },
+        { MongoDB: { icon: <SiMongodb />, className: "text-green-500" } },
+
         {
           Tailwind: { icon: <RiTailwindCssFill />, className: "text-blue-500" },
         },
-        { MySQL: { icon: <SiMysql />, className: "text-blue-600" } },
+        {
+          ExpressJS: {
+            icon: <p className="text-xl text-yellow-500">ExpressJS</p>,
+          },
+        },
+        // { MySQL: { icon: <SiMysql />, className: "text-blue-600" } },
       ],
     },
     {

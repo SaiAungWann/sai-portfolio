@@ -29,15 +29,23 @@ export default function Experience() {
         { PHP: { icon: <FaPhp />, className: "text-blue-600" } },
         { Laravel: { icon: <FaLaravel />, className: "text-red-500" } },
         { Livewire: { icon: <SiLivewire />, className: "text-red-500" } },
+        { NodeJS: { icon: <FaNodeJs />, className: "text-green-600" } },
+        { MongoDB: { icon: <SiMongodb />, className: "text-green-500" } },
+
         {
           Tailwind: { icon: <RiTailwindCssFill />, className: "text-blue-500" },
+        },
+        {
+          ExpressJS: {
+            icon: <p className="text-xl text-yellow-500">ExpressJS</p>,
+          },
         },
         { MySQL: { icon: <SiMysql />, className: "text-blue-600" } },
       ],
     },
     {
       id: 2,
-      date: "Sep 2024 - Sep 2025",
+      date: "May 2024 - Aug 2024",
       title: "PHP-Laravel Developer and Deployment",
       company: "Creative Coder Myanmar",
       description:
@@ -54,7 +62,7 @@ export default function Experience() {
     },
     {
       id: 3,
-      date: "May 2024 - Jan 2025",
+      date: "Feb 2024 - Apr 2024",
       title: "Study MERN-Stack Developer",
       company: "Creative Coder Myanmar",
       description:
@@ -95,7 +103,7 @@ export default function Experience() {
     },
     {
       id: 5,
-      date: "AUG - NOV 2023",
+      date: "AUG 2023 - NOV 2023",
       title: "Study Web Foundation",
       company: "Code Wall Technology",
       description: "I have studied Web Foundation.",
