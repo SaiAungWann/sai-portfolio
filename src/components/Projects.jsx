@@ -457,13 +457,28 @@ export default function Projects() {
 
 // Minimum distance (in pixels) to be considered a swipe
   const minSwipeDistance = 50;
-      const onTouchStart = (e) => {
+    const onTouchStart = (e) => {
       setTouchEnd(null); // Reset for new swipe
       setTouchStart(e.targetTouches[0].clientX);
     };
 
     const onTouchMove = (e) => {
       setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const onTouchEnd = () => {
+      if (!touchStart || !touchEnd) return;
+      
+      const distance = touchStart - touchEnd;
+      const isLeftSwipe = distance > minSwipeDistance;
+      const isRightSwipe = distance < -minSwipeDistance;
+
+      if (isLeftSwipe) {
+        showNextImage();
+      }
+      if (isRightSwipe) {
+        showPrevImage();
+      }
     };
 
       const [isExpanded, setIsExpanded] = useState(false);
