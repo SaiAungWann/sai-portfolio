@@ -22,6 +22,7 @@ function MySkills() {
           {skills.map((skill)=>(
             <div className=" justify-start w-10 sm:w-10 md:w-10 lg:w-20 mx-auto">
               <img
+                key={skill.id} 
                 src={skill}
                 className=" w-10 sm:w-10 md:w-10 lg:w-20 mx-auto"
               />

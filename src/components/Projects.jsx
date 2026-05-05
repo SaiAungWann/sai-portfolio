@@ -466,33 +466,31 @@ export default function Projects() {
       setTouchEnd(e.targetTouches[0].clientX);
     };
 
-    const onTouchEnd = () => {
-      if (!touchStart || !touchEnd) return;
+      const [isExpanded, setIsExpanded] = useState(false);
+
+      const SeeMore = () => {
+        setIsExpanded(!isExpanded);
+      };
       
-      const distance = touchStart - touchEnd;
-      const isLeftSwipe = distance > minSwipeDistance;
-      const isRightSwipe = distance < -minSwipeDistance;
-
-      if (isLeftSwipe) {
-        showNextImage();
-      }
-      if (isRightSwipe) {
-        showPrevImage();
-      }
-    };
-
   return (
     <div id="project" className="mx-10 my-5 font-serif text-white scroll-mt-24">
-      <div  className=" my-5 font-serif text-white border-b border-gray-700 pb-2">
+      <div  className=" my-5 font-serif text-white border-b border-gray-700 pb-2 text-justify">
           <h1 className="text-xl ">MY PORTFOLIO .....</h1>
+          <div className={` ${isExpanded ? "" : "line-clamp-3"}`}>
           <p>
             This portfolio presents a selection of my personal and professional projects developed using Building Information Modelling (BIM) tools, with a primary focus on Autodesk Revit and Autodesk Navisworks Manage. In addition, supporting software such as Autodesk AutoCAD, Microsoft Excel and CapCut has been utilized for reporting, data analysis, video editing, and presentation purposes.
           </p>
           <p>
             The latter section of this portfolio also showcases selected freelance projects created using SketchUp and V-Ray, demonstrating my versatility in architectural visualization and design support.
           </p>
+          </div>
+      <p 
+        className=" text-gray-400 cursor-pointer hover:underline"
+        onClick={SeeMore}
+      >
+        {isExpanded ? "See less" : "See more"} .....
+      </p>
       </div>
-
       <div  className=" my-5 space-y-2 font-serif text-white relative">          
           <h1 className="text-xl underline">PROJECTS .....</h1>
         {/* --- Projects List --- */}

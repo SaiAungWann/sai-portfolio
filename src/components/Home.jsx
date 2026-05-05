@@ -11,8 +11,8 @@ import MyCerts from "./MyCert";
 
 export default function Home() {
   return (
-    <div className="w-full relative space-y-2">
-      <div className="sticky top-0 w-full bg-transparent z-50 md:hidden p-2">
+    <div className="min-w-full relative space-y-2">
+      <div className="sticky top-0 w-full bg-transparent z-50 lg:hidden p-2">
         <div className="w-full bg-gray-800 rounded-xl shadow-lg">
            <Menu />
         </div>

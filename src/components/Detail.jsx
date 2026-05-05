@@ -42,41 +42,50 @@ export default function Detail({}) {
       component: <Project />,
     },
   ];
-
+       const [isExpanded, setIsExpanded] = useState(false);
+ 
+       const SeeMore = () => {
+         setIsExpanded(!isExpanded);
+       };
   return (
-    <div className="  w-4/12 h-[600px] ml-5 text-white font-serif mt-5 fixed  ">
+    <div className=" w-full md:max-w-2/7 lg:h-fit md:h-[400px] lg:max-w-3/10 text-white font-serif fixed">
       <div className="">
         <div className="">
           <p className="text-4xl">Sai Aung Wann</p>
           <p className="mt-3 text-2xl"> BIM Modeller (A & S) </p>
-          <p className="mt-10 text-lg">
+          {/* <p className="mt-5 text-lg text-justify " > */}
+          <p className={`mt-5 text-lg text-justify ${isExpanded ? "" : "line-clamp-3"}`} >
             I’m a dedicated BIM Modeller providing reliable and professional modelling services to bring construction and design concepts into coordinated digital models.
           </p>
-          <br />
-          <p>
-            Educational Background {"=>"}{" "}
+            <p 
+        className=" text-gray-400 cursor-pointer hover:underline"
+        onClick={SeeMore}
+      >
+        {isExpanded ? "See less" : "See more"} .....
+      </p>
+          <p className=" mt-3">
+            Educational Background {"=>"}{" "} <br />
             <span
               id="mutitext"
-              className="bg-blue-500 font-bold p-1 rounded-md"
+              className="font-bold p-1 rounded-md"
             >
               {eduAnimation()}
 
             </span>
-          </p> <br />
-          <p>
+          </p>
+          <p className="mt-2">
             Certificate of Completion {"=>"}{" "} <br />
             <span
               id="mutitext"
-              className="bg-blue-500 font-bold p-1 rounded-md"
+              className="font-bold p-1 rounded-md"
             >
               {certAnimation()}
-
             </span>
           </p> <br />
           <p>Zeon Light Training Center - Autodesk Authorized Training Center </p>
 
         </div>
-        <ul className="mt-10 space-y-1 font-serif text-2xl text-white list-none">
+        <ul className="mt-5 space-y-1 font-serif text-2xl text-white list-none flex items-center justify-between xxl:flex-none">
           {links.map((link, index) => {
             return (
               <li key={index} className="text-lg cursor-pointer group ">

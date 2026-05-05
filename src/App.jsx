@@ -16,20 +16,20 @@ export default function Layout() {
   };
   return (
     <div className="grid min-h-screen min-w-full md:grid md:grid-cols-3" style={BGIMG}>
-      <div className="col-span-1 mt-10 ml-10 overflow-auto hidden md:block">
+      <div className="col-span-1 mt-10 ml-10 overflow-auto hidden lg:block">
         <Detail />
       </div>
 
-      <div className="col-span-2">
+      <div className="col-span-3 lg:col-span-2">
         <div>
           <Outlet />
         </div>
       </div>
-      <div className=" w-full h-10 text-center bg-gray-900 text-white col-span-3">
+      <div className=" w-full h-auto text-center bg-gray-900 text-white col-span-3">
         <h1 className="p-2 text-center align-middle">
           © 2026{" "}
           <a
-            href="https://www.facebook.com/sai.aung.wann.2024"
+            href="https://www.linkedin.com/in/sai-aung-wann"
             className="underline"
           >
             Sai Aung Wann

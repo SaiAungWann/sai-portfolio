@@ -8,7 +8,7 @@ function Contact() {
   return (
     <>
        <div className="mt-2">
-          <div className=" flex items-center justify-around">
+          <div className=" flex items-center justify-between mx-10 lg:mx-0">
           {/* --- MY RESUME BUTTON --- */}
             <a
               href="https://drive.google.com/uc?export=download&id=1rLpB1xHRh66X_v98lGsoDZD-CM_s_Mac"
@@ -40,8 +40,8 @@ function Contact() {
               <span>MY PORTFOLIO</span>
             </a>
           </div>
-          <div className=" flex items-center justify-around">
-          <div className="text-white mt-2 flex items-center justify-between w-3/4 h-[50px]">
+          <div className=" flex items-center justify-between mx-10 lg:mx-0">
+          <div className="text-white mt-2 flex items-center justify-between w-full h-[50px]">
             <LINK to={"https://github.com/SaiAungWann"}>
               <img
                 src={Gitbub}
