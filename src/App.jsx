@@ -15,7 +15,7 @@ export default function Layout() {
     width: "100vh",
   };
   return (
-    <div className="grid min-h-screen min-w-full max-w-full md:grid md:grid-cols-3" style={BGIMG}>
+    <div className="grid min-h-screen min-w-full md:grid md:grid-cols-3" style={BGIMG}>
       <div className="col-span-1 mt-10 ml-10 overflow-auto hidden md:block">
         <Detail />
       </div>
