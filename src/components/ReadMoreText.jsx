@@ -1,4 +1,3 @@
-// ReadMoreText.jsx
 import React, { useState, useRef, useEffect } from "react";
 
 const ReadMoreText = ({ text, wordLimit = 40 }) => {

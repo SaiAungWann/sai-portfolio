@@ -12,10 +12,10 @@ export default function Layout() {
     backgroundAttachment: "fixed",
     backgroundRepeat: "no-repeat",
     height: "100%",
-    width: "100%",
+    width: "100vh",
   };
   return (
-    <div className="grid h-screen max-w-full md:grid-cols-3" style={BGIMG}>
+    <div className="grid min-h-screen min-w-screen md:grid md:grid-cols-3" style={BGIMG}>
       <div className="col-span-1 mt-10 ml-10 overflow-auto hidden md:block">
         <Detail />
       </div>
@@ -27,7 +27,7 @@ export default function Layout() {
       </div>
       <div className=" w-full h-10 text-center bg-gray-900 text-white col-span-3">
         <h1 className="p-2 text-center align-middle">
-          © 2025{" "}
+          © 2026{" "}
           <a
             href="https://www.facebook.com/sai.aung.wann.2024"
             className="underline"

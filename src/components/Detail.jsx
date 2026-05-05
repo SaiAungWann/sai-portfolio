@@ -9,10 +9,14 @@ import About from "../components/About";
 import { Link } from "react-scroll";
 import { Link as LINK } from "react-router-dom";
 import { useEffect } from "react";
-import Animation from "./tAnimation.jsx";
+import eduAnimation from "./eduAnimation.jsx";
+import certAnimation from "./certAnimation.jsx";
+import Contact from "./Contact.jsx";
 
 import { TypeAnimation } from "react-type-animation";
 import MySkills from "./MySkills";
+import MyCerts from "./MyCert.jsx";
+
 
 export default function Detail({}) {
   const links = [
@@ -27,9 +31,9 @@ export default function Detail({}) {
       component: <MySkills />,
     },
     {
-      link: "My Experiences",
-      section: "experience",
-      component: <Experience />,
+      link: "My Certificates",
+      section: "certs",
+      component: <MyCerts />,
     },
 
     {
@@ -44,21 +48,33 @@ export default function Detail({}) {
       <div className="">
         <div className="">
           <p className="text-4xl">Sai Aung Wann</p>
-          <p className="mt-3 text-2xl"> Freelance Web Developer </p>
+          <p className="mt-3 text-2xl"> BIM Modeller (A & S) </p>
           <p className="mt-10 text-lg">
-            I’m offering a reliable and professional service to help bring your
-            business website to life.
+            I’m a dedicated BIM Modeller providing reliable and professional modelling services to bring construction and design concepts into coordinated digital models.
           </p>
           <br />
           <p>
-            Technical Stacks {"=>"}{" "}
+            Educational Background {"=>"}{" "}
             <span
               id="mutitext"
               className="bg-blue-500 font-bold p-1 rounded-md"
             >
-              {Animation()}
+              {eduAnimation()}
+
             </span>
-          </p>
+          </p> <br />
+          <p>
+            Certificate of Completion {"=>"}{" "} <br />
+            <span
+              id="mutitext"
+              className="bg-blue-500 font-bold p-1 rounded-md"
+            >
+              {certAnimation()}
+
+            </span>
+          </p> <br />
+          <p>Zeon Light Training Center - Autodesk Authorized Training Center </p>
+
         </div>
         <ul className="mt-10 space-y-1 font-serif text-2xl text-white list-none">
           {links.map((link, index) => {
@@ -69,9 +85,9 @@ export default function Detail({}) {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={-30}
+                  offset={-50}
                   activeClass="bg-green-500 rounded-md p-2 "
-                  className=" hover:text-green-500 "
+                  className=" hover:text-blue-500 "
                 >
                   {link.link}
                 </Link>
@@ -80,56 +96,7 @@ export default function Detail({}) {
             );
           })}
         </ul>
-
-        <div className="mt-2">
-          <a
-            href="/assets/myResume/Sai_Aung_Wann_TH.pdf"
-            download="Sai_Aung_Wann_TH.pdf"
-            className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center justify-center w-[200px]"
-          >
-            <svg
-              className="w-4 h-4 mr-2 fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-            >
-              <path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" />
-            </svg>
-            <span>MY RESUME</span>
-          </a>
-
-          <div className="text-white mt-2 flex items-center justify-between w-[200px] h-[50px]">
-            <LINK to={"https://github.com/SaiAungWann"}>
-              <img
-                src={Gitbub}
-                alt=""
-                className="w-8 rounded-full hover:w-10"
-              />
-            </LINK>
-            <LINK
-              to={
-                "https://www.linkedin.com/in/sai-aung-wann-%E4%BD%99%E8%8F%AB%E5%A4%A9"
-              }
-            >
-              <img
-                src={Linkedin}
-                alt=""
-                className="w-8 rounded-md hover:w-10"
-              />
-            </LINK>
-
-            <LINK to={"https://wa.me/66645659400?text=Hello"}>
-              <img
-                src={Whatsapp}
-                alt=""
-                className="w-8 rounded-full hover:w-10"
-              />
-            </LINK>
-
-            <LINK to={"https://line.me/R/ti/p/sai1line18"}>
-              <img src={Line} alt="" className="w-8 rounded-md hover:w-10" />
-            </LINK>
-          </div>
-        </div>
+          <Contact/>
       </div>
     </div>
   );

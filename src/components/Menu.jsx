@@ -4,6 +4,8 @@ import Project from "../components/Projects";
 import About from "../components/About";
 import MySkills from "./MySkills";
 import { Link } from "react-scroll";
+import MyCerts from "./MyCert";
+import Contact from "./Contact";
 
 function Menu() {
   const links = [
@@ -18,9 +20,9 @@ function Menu() {
       component: <MySkills />,
     },
     {
-      link: "Experiences",
-      section: "experience",
-      component: <Experience />,
+      link: "My Certificates",
+      section: "certs",
+      component: <MyCerts />,
     },
 
     {
@@ -31,7 +33,7 @@ function Menu() {
   ];
   return (
     <>
-      <nav className="">
+      <nav className=" mt-2 mx-auto sticky">
         <ul className=" space-y-1 font-serif text-2xl text-white list-none flex justify-around items-center underline p-1">
           {links.map((link, index) => {
             return (
@@ -44,7 +46,7 @@ function Menu() {
                   spy={true}
                   smooth={true}
                   duration={500}
-                  offset={-30}
+                  offset={-250}
                   activeClass="bg-green-500 rounded-md p-2 "
                   className=" hover:text-green-500 "
                 >
@@ -55,6 +57,7 @@ function Menu() {
             );
           })}
         </ul>
+      <Contact />
       </nav>
     </>
   );
