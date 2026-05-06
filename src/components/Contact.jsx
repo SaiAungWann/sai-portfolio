@@ -69,9 +69,9 @@ function Contact() {
               />
             </LINK>
 
-            <LINK to={"https://line.me/R/ti/p/sai.bkk.060526"}>
-              <img src={Line} alt="" className="w-8 rounded-md hover:w-10" />
-            </LINK>
+            <LINK to={"https://line.me/R/ti/p/~sai.bkk.060526"}>
+                <img src={Line} alt="Line Business" className="w-8 rounded-md hover:w-10" />
+              </LINK>
           </div>
          </div>
         </div>
