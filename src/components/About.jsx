@@ -17,7 +17,7 @@ export default function About() {
       </div>
 
       <div className={` ${isExpanded ? "" : "line-clamp-3"}`}>
-        <div className="md:hidden text-center">
+        <div className="lg:hidden text-center">
           <p className="text-4xl">Sai Aung Wann</p>
           <p className="mt-3 text-2xl"> BIM Modeller (A & S) </p>
         </div>
