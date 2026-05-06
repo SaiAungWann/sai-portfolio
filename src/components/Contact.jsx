@@ -61,7 +61,7 @@ function Contact() {
               />
             </LINK>
 
-            <LINK to={"https://wa.me/66645659400?text=Hello"}>
+            <LINK to={"https://wa.me/6585296509?text=Hello"}>
               <img
                 src={Whatsapp}
                 alt=""
@@ -69,7 +69,7 @@ function Contact() {
               />
             </LINK>
 
-            <LINK to={"https://line.me/R/ti/p/sai1line18"}>
+            <LINK to={"https://line.me/R/ti/p/sai.bkk.060526"}>
               <img src={Line} alt="" className="w-8 rounded-md hover:w-10" />
             </LINK>
           </div>
