@@ -132,7 +132,7 @@ export default function Projects() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   // --- Updated Projects Data Structure ---
-  const projectsData = [
+const projectsData = [
     {
       id: 1,
       title: "QTO & BOQ using Navisworks Manage 2026 and Microsoft Excel",
@@ -143,11 +143,12 @@ export default function Projects() {
         "Performed Quantity Takeoff (QTO) and generated a Bill of Quantities (BOQ) using Navisworks Manage 2026 with the rst_advanced_sample_project_R24.rvt model.",
         "Quantities were extracted and organized using tools such as Find Items, Quantification Workbook, Item & Resource Catalogs, Selection Tree, Sets, Properties, Sheet Browser, and Saved Viewpoints. Final data was exported to Microsoft Excel for analysis and reporting."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
         { type: "image", src: navisworks },
         { type: "image", src: excle },
       ],
+      skills: ["Quantity Surveying", "Data Extraction", "BIM Quantification", "Excel Reporting"],
     },
     {
       id: 2,
@@ -159,11 +160,12 @@ export default function Projects() {
         "Developed a Clash Detection Matrix Report using Navisworks Manage 2026 and Microsoft Excel, based on the rst_advanced_sample_project_combined_R24.rvt model, to systematically identify and manage interferences between disciplines.",
         "Clash tests were organized by trade (Architectural, Structural, MEP) and structured into a matrix format for clear visualization of clash relationships."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
         { type: "image", src: navisworks },
         { type: "image", src: excle },
       ],
+      skills: ["Clash Coordination", "Interference Management", "Disciplinary Review", "Matrix Reporting"],
     },
     {
       id: 3,
@@ -175,11 +177,13 @@ export default function Projects() {
         "Created a BIM 4D/5D construction sequence animation using Navisworks Manage 2026 and Microsoft Excel. The project timeline was developed in Excel and integrated into Navisworks Timeliner to simulate construction sequencing.",
         "The animation was exported as a video and finalized using CapCut for editing and presentation."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
         { type: "image", src: navisworks },
         { type: "image", src: CapCut },
+        { type: "image", src: excle },
       ],
+      skills: ["4D, 5D Simulation", "Construction Phasing", "Time-liner Integration", "Video Editing"],
     },
     {
       id: 4,
@@ -191,10 +195,11 @@ export default function Projects() {
         "Utilized the Appearance Profiler in Navisworks Manage 2026 with the rst_advanced_sample_project_combined_R24.rvt model to visually categorize and differentiate model elements based on properties.",
         "Applied color schemes to enhance model clarity, improve element identification, and support efficient model review and coordination."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
         { type: "image", src: navisworks },
       ],
+      skills: ["Model Categorization", "Visual Coordination", "Property Filtering", "Data Visualization"],
     },
     {
       id: 5,
@@ -203,77 +208,74 @@ export default function Projects() {
       link: "https://drive.google.com/drive/folders/1Ra4A8IMn4cP6Mb4uX4FFZzimjwjwF2Gs?usp=drive_link",
       images: [LuxuryCondo1, LuxuryCondo2, LuxuryCondo3, LuxuryCondo4, LuxuryCondo5, LuxuryCondo6, LuxuryCondo7, LuxuryCondo8],
       description: [
-        "Developed a comprehensive BIM model for a 16-storey luxury condominium with 6 units per floor, based on the original design concept. The project includes full architectural and structural modelling, along with complete drawing documentation such as floor plans, elevations, sections, area layouts, and detailed sheets.",
-        "Key features include two basement levels for parking and services, a mixed-use ground floor (restaurant, reception, convenience store, office, yoga & gym), and fully planned residential units (2nd–14th floors) with complete functional spaces.",
-        "Performed Quantity Take-Off (QTO) for structural and architectural elements (columns, beams, walls, floors) with proper data organization, filtering, and sheet-based presentation.",
-        "Delivered a complete set of well-structured drawings with consistent naming conventions, supported by 3D views, camera perspectives, and rendered visuals for presentation."
+        "Developed a comprehensive BIM model for a 16-storey luxury condominium with 6 units per floor, based on the original design concept.",
+        "Performed Quantity Take-Off (QTO) for structural and architectural elements with proper data organization.",
+        "Delivered a complete set of well-structured drawings with consistent naming conventions.","Reward by Zeon Light Autodesk Authorized Training Center Design Program - Winner Award for outstanding performance in Revit Architecture & Structure (Essential)"
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Architectural Modeling", "Structural Modeling", "Quantity Take-off", "Documentation", "BIM Standards", "Presentation"],
     },
     {
       id: 6,
       title: "Family Creation ( custom parameter )",
       software: "Autodesk Revit 2026",
       link: "https://drive.google.com/drive/folders/1Wq6HcNT3cv6aSzostGI-Cu0XwNpW9hwS?usp=drive_link",
-      images: [
-        Architectural_Families, Architectural_Families1,        
-        annotation_Families,  Profile_Families, Structural_Families, X_Base_Families
-              ],
+      images: [Architectural_Families, Architectural_Families1, annotation_Families, Profile_Families, Structural_Families, X_Base_Families],
       description: [
         "Created and customized multiple Revit Families, including Structural, Architectural, Annotation, Profile, Adaptive (X-Base), and Massing & Pattern-Based families.",
-        "Gained practical experience in key BIM workflows such as Design Options, Worksharing, Project Setup, and Revit Phasing for construction sequencing, enhancing project coordination and model management efficiency."
+        "Gained practical experience in key BIM workflows such as Design Options, Worksharing, and Project Setup."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Parametric Modeling", "Family Creating & Editing", "Adaptive Components", "Worksharing"],
     },
     {
       id: 7,
       title: "ProjectSetup Workflow in Revit",
       software: "Autodesk Revit 2026",
-      link: "https://drive.google.com/drive/folders/168imCKZ0IWanZxarQf5WUl328wc9tz2i?usp=drive_link",
-      images: [
-        SS_ProjectSetup_Mar10_220008, SS_ProjectSetup_Mar10_220033, SS_ProjectSetup_Mar10_220746, SS_ProjectSetup_Mar10_220838
-              ],
+      link: "https://www.linkedin.com/posts/sai-aung-wann_bim-revit-bimworkflow-activity-7437152791535456257-s3Kc?utm_source=share&utm_medium=member_desktop&rcm=ACoAADz0YWcBZKCtZnxwuoEv5dqxG7cFtUFOZX4",
+      images: [SS_ProjectSetup_Mar10_220008, SS_ProjectSetup_Mar10_220033, SS_ProjectSetup_Mar10_220746, SS_ProjectSetup_Mar10_220838],
       description: [
-        "A clear and well-structured project setup is essential for coordination, accuracy, and smooth collaboration across disciplines.", "Please click the project file link for my project setup workflow in Revit."
+        "A clear and well-structured project setup is essential for coordination, accuracy, and smooth collaboration across disciplines.",
+        "Please click the project file link for my project setup workflow in Revit.",
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["BIM Management", "Project Configuration", "Coordinate Systems", "Template Management"],
     },
     {
       id: 8,
       title: "Construction Sequence by Using Revit Phase",
       software: "Autodesk Revit 2026",
       link: "https://drive.google.com/drive/folders/1mzX8oRFZ6C3M-HMMnuwXwNFi9y1nJixQ?usp=drive_link",
-      images: [
-        Phasing
-              ],
+      images: [Phasing],
       description: [
-        "Revit Phasing is used to represent different stages of a project such as existing conditions, demolition, renovation, and new construction within the same model. It helps teams clearly visualize how a building evolves over time while keeping all information coordinated in one file.","Phasing is especially useful for renovation, extension, and redevelopment projects where elements need to be tracked based on when they are created or demolished."
+        "Revit Phasing is used to represent different stages of a project such as existing conditions, demolition, renovation, and new construction within the same model.",
+        "Phasing is especially useful for renovation, extension, and redevelopment projects."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Phase Management", "Renovation Workflow", "Construction Sequencing", "Model Timeline"],
     },
     {
       id: 9,
       title: "Design Option",
       software: "Autodesk Revit 2026",
       link: "https://drive.google.com/drive/folders/1WO1yxRoZkKva40P4hULjyQyJuKVY5Wde?usp=drive_link",
-      images: [
-        DesignOption
-              ],
+      images: [DesignOption],
       description: [
-        "In many projects, several design ideas need to be tested before selecting the final solution. Revit Design Options allows designers to create and manage multiple design variations within the same project model without affecting the main design.",
-        "This feature is commonly used to compare different layouts, façade concepts, massing studies, or spatial arrangements during the design stage."
+        "Revit Design Options allows designers to create and manage multiple design variations within the same project model without affecting the main design.",
+        "This feature is commonly used to compare different layouts, façade concepts, or spatial arrangements."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Design Iteration", "Comparative Analysis", "Option Sets", "Concept Presentation"],
     },
     {
       id: 10,
@@ -282,13 +284,13 @@ export default function Projects() {
       link: "https://drive.google.com/drive/folders/1AR_zM7iDBo1E8nirpgcNbBnaJ7AEd9tT?usp=drive_link",
       images: [ToiletSOP],
       description: [
-        "Architectural and structural modelling were developed based on the original design concept. The scope included the preparation of floor plans, elevations, sections, and area and room layout plans, along with wall setting-out plans, 3D views, and camera views.",
-        "Comprehensive documentation was produced, including schedules, tags, annotations, legends, keynotes, and detailed drawing sheets.",
-        "The project was delivered through well-organized and clearly structured drawing sheets to support effective presentation and communication."
+        "Architectural and structural modelling were developed based on the original design concept.",
+        "Comprehensive documentation was produced, including schedules, tags, annotations, legends, keynotes, and detailed drawing sheets."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Standard Operating Procedures", "Detailing", "Annotation", "Interior Modeling"],
     },
     {
       id: 11,
@@ -297,50 +299,43 @@ export default function Projects() {
       link: "https://drive.google.com/file/d/1o7RpFkng9TF6hMccrxWkqotX5oS8EIP0/view?usp=drive_link",
       images: [MxiUsedBuilding5, MxiUsedBuilding2, MxiUsedBuilding3, MxiUsedBuilding4, MxiUsedBuilding1, MxiUsedBuilding6, MxiUsedBuilding7, MxiUsedBuilding8],
       description: [
-        "Architectural and structural modelling were developed based on the original design concept. The project included the preparation of floor plans, elevations, sections, and area and room layout plans, along with wall setting-out plans, 3D views, and camera views.",
-        "The development consists of a 16-storey building with 6 units per floor, supported by two basement levels for parking and PUB services. The ground floor accommodates mixed-use functions, including a restaurant, condominium reception, 24-hour convenience store, office spaces, and wellness facilities such as a yoga and gym area.",
-        "Quantity take-offs were generated for key structural and architectural elements, including columns, beams, walls, and floors. Data was systematically organized with proper formatting, filtering, grouping, and sheet-based presentation.",
-        "The project was supported with 3D views, camera views, and rendered images to effectively communicate design intent."
+        "Architectural and structural modelling were developed for a 16-storey building with 6 units per floor.",
+        "Quantity take-offs were generated for key structural and architectural elements, including columns, beams, walls, and floors."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Mixed-Use Design", "Massing Studies", "QTO", "High-Rise Modeling", "Documentation", "BIM Standards", "Presentation"],
     },
     {
       id: 12,
       title: "Three and Half Stories Residential Building",
       software: "Autodesk Revit 2026",
       link: "https://drive.google.com/file/d/1imLwgZ3u1VSn2gODJMcd3XawOZOOEecJ/view?usp=drive_link",
-      images: [A_ThreeAndHalfStories5, A_ThreeAndHalfStories4, A_ThreeAndHalfStories1, A_ThreeAndHalfStories3, A_ThreeAndHalfStories2,  ],
+      images: [A_ThreeAndHalfStories5, A_ThreeAndHalfStories4, A_ThreeAndHalfStories1, A_ThreeAndHalfStories3, A_ThreeAndHalfStories2],
       description: [
-        "Architectural and structural modelling were developed based on the original design concept. The scope included the preparation of floor plans, elevations, sections, and area and room layout plans, along with wall setting-out plans, 3D views, and camera views.",
-        "The project consists of a 3.5-storey building, with documentation to support design development and visualization.",
+        "Architectural and structural modelling were developed for a 3.5-storey building.",
         "The project was presented through clear 3D views and camera views to effectively communicate the design intent."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Residential Design", "BIM Documentation", "3D Visualization", "Spatial Planning"],
     },
     {
       id: 13,
       title: "Three and Half Stories Residential Building ",
       software: "Autodesk Revit 2022",
       link: "https://drive.google.com/file/d/1xOAUnSJPYtUp-Fn2BYWn9r-vQLJKEti7/view?usp=drive_link",
-      images: [
-        B_ThreeAndHalfStories1, B_ThreeAndHalfStories2,
-        B_ThreeAndHalfStories3, B_ThreeAndHalfStories4, B_ThreeAndHalfStories5, B_ThreeAndHalfStories6,
-        B_ThreeAndHalfStories7,
-        B_ThreeAndHalfStories8_jpg,
-        B_ThreeAndHalfStories8_png
-      ],
+      images: [B_ThreeAndHalfStories1, B_ThreeAndHalfStories2, B_ThreeAndHalfStories3, B_ThreeAndHalfStories4, B_ThreeAndHalfStories5, B_ThreeAndHalfStories6, B_ThreeAndHalfStories7, B_ThreeAndHalfStories8_jpg, B_ThreeAndHalfStories8_png],
       description: [
-        "Architectural and structural modelling were developed based on the original design concept. The scope included the preparation of floor plans, elevations, sections, and area and room layout plans, along with wall setting-out plans, 3D views, and camera views.",
-        "The project consists of a 3.5-storey building, with documentation to support design development and visualization.",
-        "The project was presented through clear 3D views and camera views to effectively communicate the design intent."
+        "Detailed BIM development of a residential project including structural and architectural coordination.",
+        "Produced 3D rendered visuals and construction sheets."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Construction Documentation", "Render Management", ],
     },
     {
       id: 14,
@@ -349,13 +344,13 @@ export default function Projects() {
       link: "https://drive.google.com/file/d/1WjjpXKH6nCw4WUZLFwrKaBzUi6A1o3bt/view?usp=drive_link",
       images: [A_OneStoryResidentialBuilding, A_OneStoryResidentialBuilding2],
       description: [
-        "Architectural and structural modelling were developed based on the original design concept. The scope included the preparation of floor plans, elevations, sections, and area and room layout plans, along with wall setting-out plans, 3D views, and camera views.",
-        "The project consists of a one-storey building, with documentation to support design development and visualization.",
-        "The project was presented through clear 3D views and camera views to effectively communicate the design intent."
+        "Architectural and structural modelling for a single-storey residential dwelling.",
+        "Focused on clear spatial layouts and standard construction details."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
       ],
+      skills: ["Small-Scale Design", "Detailing", "BIM Modeling"],
     },
     {
       id: 15,
@@ -364,50 +359,45 @@ export default function Projects() {
       link: "https://drive.google.com/file/d/1oytDk1KzcV3pchqQ656JULajhLZWMa12/view?usp=drive_link",
       images: [B_OneStoryResidentialBuilding, B_OneStoryResidentialBuilding2, B_OneStoryResidentialBuilding3, B_OneStoryResidentialBuilding4],
       description: [
-       "Architectural and structural modelling were developed based on the original design concept. The scope included the preparation of floor plans, elevations, sections, and area and room layout plans, along with wall setting-out plans, 3D views, and camera views.",
-        "The project consists of a one-storey building, with documentation to support design development and visualization.",
-        "The project was presented through clear 3D views and camera views to effectively communicate the design intent."
+        "BIM implementation for a one-storey building focusing on architectural intent and visual representation."
       ],
-      skills: [
+      tools: [
         { type: "image", src: revit },
-
       ],
+      skills: ["Architectural Intent", "Model Accuracy", "Sheet Layout"],
     },
     {
       id: 16,
       title: "Three and Half Stories Residential Building (Structural Analysis and Design)",
       software: "Etabs & SAFE",
       link: "https://drive.google.com/drive/folders/1qllbPpvrp5TjlfEyKolcXB8aujsWmJQW?usp=drive_link",
-      images: [
-        ThreeAndHalf_ES, ThreeAndHalf_ES1
-      ],
+      images: [ThreeAndHalf_ES, ThreeAndHalf_ES1],
       description: [
-        "Performed structural analysis and developed structural drawings for a three-and-a-half storey residential building based on architectural drawings, using ETABS and SAFE.",
-        "The workflow included modelling, load application, analysis, and design of structural elements such as beams, columns, slabs, and foundations, ensuring accuracy and compliance with design requirements."
+        "Performed structural analysis and developed structural drawings using ETABS and SAFE.",
+        "The workflow included modelling, load application, analysis, and design of structural elements."
       ],
-      skills: [
+      tools: [
         { type: "image", src: autocad },
         { type: "image", src: Etabs },
         { type: "image", src: SAFE },
       ],
+      skills: ["Structural Engineering", "Load Analysis", "Foundation Design", "Reinforcement Detailing","Building Codes"],
     },
     {
       id: 17,
       title: "Two and Half Stories Residential Building (Structural Analysis and Design)",
       software: "Etabs & SAFE",
       link: "https://drive.google.com/drive/folders/1G6VkFr-DEichyAFmSxU39z0BpMJGLOIz?usp=drive_link",
-      images: [
-        TwoAndHalf_ES, TwoAndHalf_ES1
-      ],
+      images: [TwoAndHalf_ES, TwoAndHalf_ES1],
       description: [
-        "Performed structural analysis and developed structural drawings for a three-and-a-half storey residential building based on architectural drawings, using ETABS and SAFE.",
-        "The workflow included modelling, load application, analysis, and design of structural elements such as beams, columns, slabs, and foundations, ensuring accuracy and compliance with design requirements."
+        "Structural analysis for residential buildings ensuring accuracy and compliance with design requirements."
       ],
-      skills: [
+      tools: [
         { type: "image", src: autocad },
         { type: "image", src: Etabs },
         { type: "image", src: SAFE },
       ],
+      skills: ["Building Codes", "Seismic Analysis", "Structural Design", "AutoCAD Drafting"],
     },
     {
       id: 18,
@@ -416,13 +406,14 @@ export default function Projects() {
       link: "",
       images: [SketchUpVray1, SketchUpVray2, SketchUpVray3, SketchUpVray4, SketchUpVray5, SketchUpVray6, SketchUpVray7],
       description: [
-        "Contributed as a volunteer architectural designer, producing SketchUp models for monastery projects across Myanmar, supporting conceptual design development and visualization for multiple sites."
+        "Contributed as a volunteer architectural designer, producing SketchUp models for monastery projects across Myanmar."
       ],
-      skills: [
+      tools: [
         { type: "image", src: Sketchup },
         { type: "text", src: Vray },
         { type: "text", src: PhotoShop },
       ],
+      skills: ["3D Visualization", "Architectural Rendering", "Communication", "Conceptual Design"],
     },
   ];
 
@@ -514,12 +505,34 @@ export default function Projects() {
                 key={project.id}
                 className="mb-6 lg:grid lg:grid-cols-4 gap-4 p-4 border-b-2 border-white"
               >
-                <div className="flex flex-col mx-auto items-center justify-center cursor-pointer" onClick={() => openModal(project)}>
-                  <img
-                    src={getFirstImage(project)}
-                    className="w-50 sm:70 md:100 lg:120 mx-auto rounded shadow-lg hover:w-54"
-                    alt={project.title}
-                  />
+                <div className="relative flex items-center justify-center overflow-hidden h-48 sm:h-64 lg:h-auto lg:flex-col lg:col-span-1 cursor-pointer" onClick={() => openModal(project)}>
+                  <div className="flex items-center justify-center w-full lg:block relative">
+        
+                      {/* Left Image Peek (Previous) - Hidden on Desktop */}
+                      {project.images.length > 1 && (
+                        <img
+                          src={project.images[1] || project.images[0]} 
+                          className="absolute left-24 sm:left-48 w-32 sm:w-48 opacity-30 scale-75 blur-[1px] lg:hidden transition-all"
+                          alt="prev"
+                        />
+                      )}
+
+                  {/* MAIN CENTER IMAGE */}
+                        <img
+                          src={getFirstImage(project)}
+                          className="z-10 w-48 sm:w-64 md:w-80 lg:w-full mx-auto rounded shadow-xl border border-white/20 transform transition-transform hover:scale-105"
+                          alt={project.title}
+                        />
+
+                        {/* Right Image Peek (Next) - Hidden on Desktop */}
+                      {project.images.length > 2 && (
+                        <img
+                          src={project.images[2]} 
+                          className="absolute right-24 sm:right-48 w-32 sm:w-48 opacity-30 scale-75 blur-[1px] lg:hidden transition-all"
+                          alt="next"
+                        />
+                      )}
+                    </div>
                   <h3 className="text-lg text-white text-center hidden lg:block mt-2 hover:text-blue-400">
                     {project.title}
                   </h3>
@@ -544,14 +557,14 @@ export default function Projects() {
                       </div>
 
                   <div className="flex gap-2 mt-2 items-center">
-                    <p>Skills:</p>
+                    <p>Tools:</p>
                     <div className="flex flex-wrap gap-2 mt-2">
-                      {Array.isArray(project.skills) &&
-                        project.skills.map((skill, index) => (
+                      {Array.isArray(project.tools) &&
+                        project.tools.map((tool, index) => (
                           <img
                             key={index}
-                            src={skill.src}
-                            alt="skill icon"
+                            src={tool.src}
+                            alt="tool icon"
                             className="w-8 h-8 object-contain"
                           />
                         ))}
@@ -565,7 +578,7 @@ export default function Projects() {
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-blue bg-opacity-80 backdrop-blur-sm" onClick={closeModal}>
           <div 
-            className="relative w-full max-w-4xl max-h-[90vh] overflow-y-auto bg-gray-900 border border-gray-700 rounded-xl shadow-2xl p-6 text-white" 
+            className="relative mx-auto w-full max-w-4xl max-h-100vh md:max-h-[90vh] overflow-y-auto bg-gray-900 border border-gray-700 rounded-xl shadow-2xl p-6 text-white" 
             onClick={(e) => e.stopPropagation()}
           >
             <button 
@@ -633,16 +646,21 @@ export default function Projects() {
                     <div className="grid md:grid-cols-3 gap-4"> {/* Changed to 3 columns */}
                         {/* Software Column */}
                         <div>
-                        <h4 className="text-xl font-semibold text-gray-200 mb-2 border-b-2 border-gray-700 pb-1">Software</h4>
-                        <p className="text-gray-300 bg-gray-800 p-2 rounded text-sm">{selectedProject.software}</p>
+                        <h4 className="text-xl font-semibold text-gray-200 mb-2 border-b-2 border-gray-700 pb-1">Skills</h4>
+                        {Array.isArray(selectedProject.skills) && 
+                        selectedProject.skills.map((skill, index )=> (
+                         <p className="text-gray-300 bg-gray-800 p-2 rounded text-sm">
+                        {skill}</p> 
+
+                        ))}
                         </div>
 
                         {/* Skills Column */}
                         <div>
-                        <h4 className="text-xl font-semibold text-gray-200 mb-2 border-b-2 border-gray-700 pb-1">Skills</h4>
+                        <h4 className="text-xl font-semibold text-gray-200 mb-2 border-b-2 border-gray-700 pb-1">Tools</h4>
                         <div className="flex flex-wrap gap-2 pt-1">
-                            {selectedProject.skills.map((skill, index) => (
-                            <img key={index} src={skill.src} alt="skill" className="w-10 h-10 object-contain bg-white/10 p-1 rounded" />
+                            {selectedProject.tools.map((tool, index) => (
+                            <img key={index} src={tool.src} alt="tool" className="w-10 h-10 object-contain bg-white/10 p-1 rounded" />
                             ))}
                         </div>
                         </div>
